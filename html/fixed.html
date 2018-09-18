@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>侧边栏</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <style>
+        html, body {
+            background-color: #dfdede;
+        }
+        li {
+            padding: 3px 10px;
+            border-bottom: 1px solid #d4d3d3;
+        }
+        .liActive {
+            background-color: #3ABA63;
+        }
+        li a {
+            display: block;
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li tapmode="liActive" onclick="fngetcityselector()"><a class="home">城市选择</a></li>
+        <li tapmode="liActive" onclick="fnopenchineseframe()"><a class="nav1">语文辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopenmathframe()"><a class="nav2">数学辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopenEnglishframe()"><a class="nav3">英语辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopenchemistryframe()"><a class="nav4">化学辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopenphysicsframe()"><a class="nav5">物理辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopenbiologyframe()"><a class="nav6">生物辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopenhistoryframe()"><a class="nav7">历史辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopengeographyframe()"><a class="nav8">地理辅导书</a></li>
+        <li tapmode="liActive" onclick="fnopenpolitcsyframe()"><a class="nav9">政治辅导书</a></li>
+
+    </ul>
+</nav>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script>
+apiready = function () {
+    api.setStatusBarStyle({
+        style: 'dark',
+        color: '#000'
+    });
+    $api.fixStatusBar($api.dom('nav'));
+};
+function fngetcityselector(){
+  api.openWin({
+      name: 'cityselector_frame',
+      url: './cityselector_frame.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenchineseframe(){
+  api.openWin({
+      name: 'chinese',
+      url: './chinese.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenmathframe(){
+  api.openWin({
+      name: 'math',
+      url: './math.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenEnglishframe(){
+  api.openWin({
+      name: 'English',
+      url: './English.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenchemistryframe(){
+  api.openWin({
+      name: 'chemistry',
+      url: './chemistry.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenphysicsframe(){
+  api.openWin({
+      name: 'physics',
+      url: './physics.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenbiologyframe(){
+  api.openWin({
+      name: 'biology',
+      url: './biology.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenhistoryframe(){
+  api.openWin({
+      name: 'history',
+      url: './history.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopengeographyframe(){
+  api.openWin({
+      name: 'geography',
+      url: './geography.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+function fnopenpolitcsyframe(){
+  api.openWin({
+      name: 'politcs',
+      url: './politcs.html',
+      rect: {
+          x: 0,
+          y:  100,
+          w: 'auto',
+          h: 'auto'
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true
+  });
+}
+</script>
+</html>
